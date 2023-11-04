@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { BsHeart, BsCart, BsMenuDown } from "react-icons/bs";
 import {FiMenu} from 'react-icons/fi';
+import Navlink from "../public/components/Navlink";
 
 const Navbar = () => {
   return (
@@ -56,7 +57,7 @@ const Navbar = () => {
           </h1>
         </div>
         <ul className="flex justify-center items-center gap-4 font-medium text-zinc-400 mr-10">
-          <li className="hover:text-black">Home</li>
+          <Navlink to="/">Home</Navlink>
           <li className="hover:text-black">Shop</li>
           <li className="hover:text-black">Woman Clothing</li>
           <li className="hover:text-black">Men Shirt</li>
